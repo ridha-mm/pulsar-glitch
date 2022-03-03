@@ -1,0 +1,102 @@
+J/MNRAS/414/1679   315 glitches in the rotation of 102 pulsars (Espinoza+, 2011)
+================================================================================
+A study of 315 glitches in the rotation of 102 pulsars.
+    Espinoza C.M., Lyne A.G., Stappers B.W., Kramer M.
+   <Mon. Not. R. Astron. Soc., 414, 1679-1704 (2011)>
+   =2011MNRAS.414.1679E
+================================================================================
+ADC_Keywords: Pulsars
+Keywords: stars: neutron - pulsars: general
+
+Abstract:
+    The rotation of more than 700 pulsars has been monitored using the
+    76-m Lovell Telescope at Jodrell Bank. Here we report on a new search
+    for glitches in the observations, revealing 128 new glitches in the
+    rotation of 63 pulsars. Combining these new data with those already
+    published, we present a data base containing 315 glitches in 102
+    pulsars.
+
+Description:
+    The Jodrell Bank timing data base comprises observations of more than
+    700 pulsars, carried out at Jodrell Bank Observatory (JBO) since 1978.
+    Observation procedures are described by Hobbs et al. (2004, Cat.
+    J/MNRAS/353/1311). In summary, these have mostly been performed with
+    the 76-m Lovell telescope, with some complementary observations made
+    using the 30-m MkII and 42-ft telescopes. Every pulsar is observed at
+    typical intervals of 2-10 d in a 64-MHz band centred on 1404-MHz,
+    using an analogue filter bank. Occasionally, observations were also
+    carried out in a band centred at 610-MHz.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .   This file
+sources.dat    56      102   List of sources
+table1.dat    110      315  *All glitches, previously published and found in
+                             this work
+refs.dat      106       61   References
+--------------------------------------------------------------------------------
+Note on table1.dat: For re-analysed glitches, the new values are shown, and the
+    original references are given in the last column.
+    Visit http://www.jb.man.ac.uk/pulsar/glitches.html for an online and
+    up-to-date version of this table.
+--------------------------------------------------------------------------------
+
+See also:
+  J/MNRAS/353/1311 : Long-term timing observations of 374 pulsars (Hobbs+, 2004)
+  http://www.jb.man.ac.uk/pulsar/glitches.html : Glitches list
+
+Byte-by-byte Description of file: sources.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 11  A11   ---     Name      Pulsar name
+  13- 14  I2    h       RAh       Simbad right ascension (J2000)
+  16- 17  I2    min     RAm       Simbad right ascension (J2000)
+  19- 22  F4.1  s       RAs       Simbad right ascension (J2000)
+      24  A1    ---     DE-       Simbad declination sign (J2000)
+  25- 26  I2    deg     DEd       Simbad declination (J2000)
+  28- 29  I2    arcmin  DEm       Simbad declination (J2000)
+  31- 32  I2    arcsec  DEs       Simbad declination (J2000)
+  36- 56  A21   ---     SName     Simbad name
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table1.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label   Explanations
+--------------------------------------------------------------------------------
+   1- 11  A11   ---     Name    Pulsar name
+      12  A1    ---   n_Name    [abcd] Individual notes (1)
+  14- 22  A9    ---     Jname   J name (HHMM+DDMM)
+  24- 25  I2    ---     Seq     Glitch number within the pulsar
+  27- 36  F10.4 d       MJD     Modified Julian date of glitch
+  39- 46  F8.4  d     e_MJD     ? rms uncertainty on MJD
+  50- 58  F9.3  10-9    Dv/v    Fractional size {Delta}{nu}/{nu}
+  59- 66  F8.3  10-9  e_Dv/v    ? rms uncertainty on Dv/v
+  69- 77  F9.4  10-3    Dv1/v1  ? Fractional size {Delta}{dot}(d{nu}/dt)/(d{nu})
+  80- 86  F7.3  10-3  e_Dv1/v1  ? rms uncertainty on Dv1/v1
+  90-110  A21   ---     Notes   References (see refs.dat file)
+--------------------------------------------------------------------------------
+Note (1): Individual notes as follows:
+   a = Published as glitch candidates (Dib et al., 2008ApJ...673.1044D)
+   b = 1E 1048.1-5937
+   c = CXO J164710.2-455216
+   d = 1RXS J170849.0-400910
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: refs.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  2  A2    ---     Ref       Reference code
+   4- 22  A19   ---     BibCode   BibCode
+  24- 56  A33   ---     Aut       Author's name
+  57-106  A50   ---     Com       Comments
+--------------------------------------------------------------------------------
+
+History:
+    From electronic version of the journal
+
+================================================================================
+(End)                                      Patricia Vannier [CDS]    08-Feb-2012
